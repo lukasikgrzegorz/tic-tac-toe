@@ -1,11 +1,14 @@
 body {
     background-color: #d0d0d0;
     color: #383838;
+    font-size: 16px;
+    font-family: 'Roboto Flex', sans-serif;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
+   
 
 }
 
@@ -16,8 +19,51 @@ td {
     border-radius: 15%;
     border: 3px solid;
     border-color: #d0d0d0;
+    font-size: 60px;
+}
+
+main{
+    display: inline-block;
+    text-align: center;
 }
 
 h1{
     font-size: 30px;
 }
+
+footer{
+    padding-top: 20px;
+}
+
+.light{
+    color:#808080;
+}
+
+.parameters{
+    display: inline-block;
+    text-align: center;
+}
+
+.parameters-td{
+    width: 50px;
+    height: 50px;
+    background-color: #808080;
+    border-radius: 15%;
+    border: 3px solid;
+    border-color: #d0d0d0;
+    font-size: 16px;
+}
+
+.win-td{
+    background-color: #03570a;
+    color: #0f0;
+}
+
+.lose-td{
+    background-color: #670000;
+    color: #f00;
+}
+
+
+
+

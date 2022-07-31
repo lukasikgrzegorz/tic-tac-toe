@@ -6,36 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,500;8..144,700&display=swap"
+        rel="stylesheet">
     <title>TIC TAC TOE</title>
 </head>
 
 <body>
     <header>
-        <h1>tic o tac x toe</h1>
+        <h1>tic <span class="light">o</span> tac <span class="light">x</span> toe</h1>
     </header>
     <main>
-        <section id="parameters"></section>
+        <section id="parameters" class="parameters">
+            <table>
+                <tbody>
+                    <thead>
+                        <caption id="parameters-caption">choose one</caption>
+                    </thead>
+                    <tr>
+                        <td class="parameters-td">O</td>
+                        <td class="parameters-td">X</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
         <section id="game">
             <table>
-                <tr>
-                    <td id="0"></td>
-                    <td id="1"></td>
-                    <td id="2"></td>
-                </tr>
-                <tr>
-                    <td id="3"></td>
-                    <td id="4"></td>
-                    <td id="5"></td>
-                </tr>
-                <tr>
-                    <td id="6"></td>
-                    <td id="7"></td>
-                    <td id="8"></td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td id="0">o</td>
+                        <td id="1">x</td>
+                        <td id="2"></td>
+                    </tr>
+                    <tr>
+                        <td id="3"></td>
+                        <td id="4"></td>
+                        <td id="5"></td>
+                    </tr>
+                    <tr>
+                        <td id="6"></td>
+                        <td id="7"></td>
+                        <td id="8"></td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </main>
-    <footer>2022 grzegorz łukasik</footer>
+    <footer>2022 &#169; grzegorz łukasik</footer>
 
 </body>
 

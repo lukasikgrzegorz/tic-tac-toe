@@ -7,8 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-   
 
 }
 
@@ -19,7 +17,12 @@ td {
     border-radius: 15%;
     border: 3px solid;
     border-color: #d0d0d0;
-    font-size: 60px;
+    font-size: 60px;  
+}
+
+td:hover {
+    background-color: #383838;
+    color: #808080;
 }
 
 main{
@@ -47,11 +50,12 @@ footer{
 .parameters-td{
     width: 50px;
     height: 50px;
-    background-color: #808080;
-    border-radius: 15%;
-    border: 3px solid;
-    border-color: #d0d0d0;
     font-size: 16px;
+}
+
+.parameters-td:active {
+    background-color: #03570a;
+    color: #0f0;
 }
 
 .win-td{
@@ -63,6 +67,8 @@ footer{
     background-color: #670000;
     color: #f00;
 }
+
+
 
 
 

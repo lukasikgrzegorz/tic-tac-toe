@@ -1,4 +1,5 @@
-let gameArea = ["", "", "", "", "", "", "", "", ""];
+let gameArea = [0,0,0,0,0,0,0,0,0];
+
 const whenWin = [
     [0, 1, 2],
     [3, 4, 5],
@@ -10,7 +11,12 @@ const whenWin = [
     [2, 4, 6]
 ];
 
-playerSign = 0;
-foeSign = 1;
-player = [];
-foe = [];
+let playerSign = 1;
+let foeSign = 2;
+let gameActive = 0;
+
+let randomNumber = 0;
+
+let moveCounter = 0;
+
+let winFlag = 0;

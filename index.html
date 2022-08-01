@@ -21,11 +21,11 @@
             <table>
                 <tbody>
                     <thead>
-                        <caption id="parameters-caption">choose one</caption>
+                        <caption id="parameters-caption">choose</caption>
                     </thead>
                     <tr>
-                        <td class="parameters-td" id="chooseo">O</td>
-                        <td class="parameters-td" id="choosex">X</td>
+                        <td class="parameters-td" id="chooseo" onclick="playerChoose(1)">O</td>
+                        <td class="parameters-td" id="choosex" onclick="playerChoose(2)">X</td>
                     </tr>
                 </tbody>
             </table>
@@ -34,26 +34,27 @@
             <table>
                 <tbody>
                     <tr>
-                        <td id="0">o</td>
-                        <td id="1"></td>
-                        <td id="2"></td>
+                        <td id="0" onclick="cellChoose(0)"></td>
+                        <td id="1" onclick="cellChoose(1)"></td>
+                        <td id="2" onclick="cellChoose(2)"></td>
                     </tr>
                     <tr>
-                        <td id="3"></td>
-                        <td id="4"></td>
-                        <td id="5"></td>
+                        <td id="3" onclick="cellChoose(3)"></td>
+                        <td id="4" onclick="cellChoose(4)"></td>
+                        <td id="5" onclick="cellChoose(5)"></td>
                     </tr>
                     <tr>
-                        <td id="6"></td>
-                        <td id="7"></td>
-                        <td id="8"></td>
+                        <td id="6" onclick="cellChoose(6)"></td>
+                        <td id="7" onclick="cellChoose(7)"></td>
+                        <td id="8" onclick="cellChoose(8)"></td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
     <footer>2022 &#169; grzegorz łukasik</footer>
-
+    <script src="js/data.js"></script>
+    <script src="js/engine.js"></script>
 </body>
 
 </html>

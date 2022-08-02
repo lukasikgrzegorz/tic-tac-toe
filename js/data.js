@@ -20,3 +20,4 @@ let randomNumber = 0;
 let moveCounter = 0;
 
 let winFlag = 0;
+let drawFlag = 0;

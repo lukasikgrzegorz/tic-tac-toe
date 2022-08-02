@@ -6,8 +6,8 @@ body {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-
 }
 
 td {
@@ -26,7 +26,6 @@ td:hover {
 }
 
 main{
-    display: inline-block;
     text-align: center;
 }
 
@@ -42,20 +41,22 @@ footer{
     color:#808080;
 }
 
-.parameters{
-    display: inline-block;
-    text-align: center;
+.parameters-container{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.parameters-td{
+.parameters-container td{
     width: 50px;
     height: 50px;
     font-size: 16px;
 }
 
-.parameters-td:active {
-    background-color: #03570a;
-    color: #0f0;
+.game-container{
+    margin-top: 20px;
 }
 
 .win-td{

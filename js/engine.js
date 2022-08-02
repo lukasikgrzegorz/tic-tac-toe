@@ -34,9 +34,9 @@ function checkWin(a) {
                 gameActive = 2;
 
                 if (playerSign == a) {
-                    document.getElementById("parameters").innerHTML = "<b>you win</b><br>game will be restart";
+                    document.getElementById("parameters").innerHTML = "<b>you win</b><br>game will be restarted";
                 } else {
-                    document.getElementById("parameters").innerHTML = "<b>you lose</b><br>game will be restart";
+                    document.getElementById("parameters").innerHTML = "<b>you lose</b><br>game will be restarted";
                 }
 
 
@@ -56,23 +56,16 @@ function checkWin(a) {
     
 }
 
-function foeMove() {
-    let a = 0;
-    
-    while (a == 0) { 
-        randomGenetator(0, 8);
-        if (gameArea[randomNumber] == 0) {a=1}
-    } 
-    
-    
-    if (playerSign == 1) {
-        document.getElementById(randomNumber).innerHTML = "x";
-        gameArea[randomNumber] = 2;
-    } else {
-        document.getElementById(randomNumber).innerHTML = "o";
-        gameArea[randomNumber] = 1;
+function checkDraw() {
+    let drawCounter = 0;
+    for (i = 0; i < 9; i++){
+         if(gameArea[i]!=0){drawCounter++}
     }
-   
+    
+    if (drawCounter == 9) {
+        document.getElementById("parameters").innerHTML = "<b>draw</b><br>game will be restarted";
+        setTimeout(function(){document. location. reload()},3000);
+    }
 }
 
 function cellChoose(a) {
@@ -82,15 +75,18 @@ function cellChoose(a) {
             gameArea[a] = 1;
             moveCounter++;
             if (moveCounter > 2) { checkWin(1); }
-            if (moveCounter <= 4 && winFlag == 0) { foeMove();checkWin(2); } 
+            if (moveCounter <= 4 && winFlag == 0) { foeMove(); checkWin(2); }
+            checkDraw();
         } else {
             document.getElementById(a).innerHTML = "x";
             gameArea[a] = 2;
             moveCounter++;
             if (moveCounter > 2) { checkWin(2); }
-            if (moveCounter <= 4 && winFlag == 0) {foeMove();checkWin(1); } 
+            if (moveCounter <= 4 && winFlag == 0) { foeMove(); checkWin(1); } 
+            checkDraw();
         }
     }
     
 }
+
 

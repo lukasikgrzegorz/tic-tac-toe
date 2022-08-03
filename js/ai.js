@@ -43,8 +43,17 @@ function foeMove() {
 
     }
 
+    if (moveCounter == 1) {
+        let a = 0;
 
-    if (foeAttack == 0 && foeBlock == 0) {
+        while (a == 0) {
+            randomGenetator(0, 8);
+            if (randomNumber % 2 == 1) { randomNumber--; }
+            if (gameArea[randomNumber] == 0) { a = 1 }
+        }
+    }
+
+    if (moveCounter > 1 && foeAttack == 0 && foeBlock == 0) {
 
         let a = 0;
 

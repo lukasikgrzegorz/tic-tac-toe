@@ -11,6 +11,9 @@ const whenWin = [
     [2, 4, 6]
 ];
 
+let winCounter = 0;
+let loseCounter = 0;
+
 let playerSign = 1;
 let foeSign = 2;
 let gameActive = 0;
@@ -21,3 +24,4 @@ let moveCounter = 0;
 
 let winFlag = 0;
 let drawFlag = 0;
+
